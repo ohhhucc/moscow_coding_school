@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>FORM</title>
+	<meta charset="utf-8">
+	<meta desctiption="boilerplate code">
+	<meta keywords="boilerplate, test">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="page">
+		<header class="header">
+			<div class="header-menu">
+				<ul class="header-menu-ul">
+					<li class="header-menu-ul-li">
+						<a href="#">SERVICES</a>
+					</li>
+					<li class="header-menu-ul-li">
+						<a href="#">TARIFFS</a>
+					</li>
+					<li class="header-menu-ul-li">
+						<a href="#">REGISTER</a>
+					</li>
+				</ul>
+			</div>
+			<h1 class="header-header">DEEPCLEAN</h1>
+		</header>
+		<main class="main">
+			<form action="https://formspree.io/f/xvovezkq" method="post" class="main-form">
+				<fieldset class="register">
+					<label for="name">NAME</label>
+					<input type="text" name="name" placeholder="ALEXANDER">
+					<label for="number">NUMBER</label>
+					<input type="text" name="number" placeholder="+7 (800) 800-80-80">
+					<label for="email">E-MAIL</label>
+					<input type="email" name="email" placeholder="YO@EXAMPLE.COM">
+					<label for="tariff">TARIFF</label>
+					<select name="tariff" id="">
+						<option value="big">LARGE</option>
+						<option value="middle">MEDIUM</option>
+						<option value="small">SMALL</option>
+					</select>
+				</fieldset>
+				<input type="submit" value="SEND">
+			</form>
+		</main>
+		<footer class="footer">
+			<h1 class="footer-copyright">2021 COPYRIGHT</h1>
+			<h1 class="footer-button">BACK</h1>
+		</footer>
+	</div>
+</body>
+</html>

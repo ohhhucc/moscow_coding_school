@@ -1,0 +1,93 @@
+@import url(reset.css);
+
+@keyframes spinning-circle {
+	from 
+  	{
+    	transform: rotate(0deg)
+        translate(-150px)
+        rotate(0deg);
+    }
+    to 
+    {
+        transform: rotate(360deg)
+        translate(-150px)
+        rotate(-360deg);
+    }
+}
+
+@keyframes bigsmall {
+	from {
+		width: 130px;
+		height: 130px;
+		border: 1px solid #ff3333;
+	}
+	to {
+		width: 250px;
+		height: 250px;
+		border: 3px solid #ff3333;
+	}
+}
+
+@keyframes opas {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.page {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	position: relative;
+	background-color: #fff;
+}
+
+.sneaker {
+	width: 100px;
+	height: 55px;
+	background-image: url(../img/redlogo.png);
+	background-size: cover;
+	background-position: center;
+	margin: auto;
+	animation: opas 1s ease-in-out infinite alternate running;
+}
+
+.loader-heart {
+	position: absolute;
+	top: 46.1%;
+	left: 48.2%;
+  	animation: spinning-circle 15s linear infinite;
+  	width: 50px;
+  	height: 50px;
+  	background-size: cover;
+  	background-position: center;
+  	background-image: url(../img/redheart.png);
+  	z-index: 1;
+}
+
+.loader-search {
+	position: absolute;
+	top: 46.6%;
+	left: 48.7%;
+  	animation: spinning-circle 10s linear infinite;
+  	width: 30px;
+  	height: 30px;
+  	background-size: cover;
+  	background-position: center;
+  	background-image: url(../img/redsearch.png);
+  	z-index: 1;
+}
+
+.circle {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%, -50%);
+	border-radius: 50%;
+	animation: bigsmall 1s ease-in-out infinite alternate running, opas 1s ease-in-out infinite alternate running;
+}

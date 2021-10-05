@@ -1,0 +1,85 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+/* HEADER */
+
+.header {
+	height: 80px;
+	background-color: #C3E097;
+	display: flex;
+}
+
+.header_header {
+	margin: auto;
+	font-size: 50px;
+	font-family: 'Squada One', cursive;
+	color: #5C433A;
+}
+
+/* MAIN */
+
+.main {
+	width: 80vw;
+	margin: auto;
+	padding: 80px 0px;
+}
+
+.main_columns {
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.main_columns_column {
+	width: calc((100% - 100px)/3);
+	min-height: 100px;
+	border: 1px solid black;
+}
+
+.main_columns_column_image {
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 70%;
+}
+
+.main_columns_column_image.one {
+	background-image: url(../img/pic1.jpg);
+}
+
+.main_columns_column_image.two {
+	background-image: url(../img/pic2.jpg);
+}
+
+.main_columns_column_image.three {
+	background-image: url(../img/pic3.jpg);
+}
+
+.main_columns_column_header {
+	font-size: 30px;
+	margin: 20px 20px 0px 20px;
+	font-family: 'Red Hat Display', sans-serif;
+}
+
+.main_columns_column_text {
+	margin: 20px;
+	box-sizing: border-box;
+	font-family: 'Jost', sans-serif;
+	font-size: 20px;
+}	
+
+/*FOOTER*/
+
+.footer {
+	height: 80px;
+	background-color: #C3E097;
+	display: flex;
+}
+
+.footer_header {
+	margin: auto;
+	font-size: 50px;
+	font-family: 'Squada One', cursive;
+	color: #5C433A;
+}

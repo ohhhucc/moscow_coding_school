@@ -1,0 +1,38 @@
+.container {
+    display: grid;
+    margin: 0 5rem;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: 80px calc(100vh - 80px) 100vh;
+    grid-template-areas: 
+    "header main-menu"
+    "main-content main-content"
+    "price-offers price-offers";
+}
+
+.header {
+    grid-area: header;
+    place-self: center start;
+}
+
+.header-menu {
+    grid-area: main-menu;
+    place-self: center end;
+}
+
+.header-content {
+    grid-area: main-content;
+    place-self: center center;
+    text-align: center;
+}
+
+.price-offers {
+    grid-area: price-offers;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: minmax(min-content, max-content);
+}
+
+.price-offers__item {
+    place-self: center center;
+}

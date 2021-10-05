@@ -1,0 +1,26 @@
+.header-container {
+    display: grid;
+    margin: 0 5rem;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: 5rem;
+    grid-gap: 2rem 1rem;
+    grid-template-areas: 
+    "header main-menu"
+    "main-content main-content";
+}
+
+.header {
+    grid-area: header;
+    place-self: center start;
+}
+
+.main-menu {
+    grid-area: main-menu;
+    place-self: center end;
+}
+
+.main-content {
+    grid-area: main-content;
+    place-self: center center;
+    text-align: center;
+}
