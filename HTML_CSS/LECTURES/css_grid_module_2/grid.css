@@ -1,0 +1,39 @@
+.container {
+    display: grid;
+    margin: 0 5rem;
+    grid-template-columns: 2fr 6fr 2fr 2fr;
+    grid-template-rows: 5rem;
+    grid-gap: 2rem 1rem;
+    grid-template-areas: 
+    "logo logo main-menu main-menu"
+    "special-offer content-area content-area latest-posts"
+    "footer footer footer footer";
+}
+
+.logo {
+    grid-area: logo;
+    align-self: center;
+}
+
+.main-menu {
+    grid-area: main-menu;
+    /*align-self: center;
+    justify-self: end;*/
+    place-self: center end;
+}
+
+.special-offer {
+    grid-area: special-offer;
+}
+
+.content-area {
+    grid-area: content-area;
+}
+
+.latest-posts {
+    grid-area: latest-posts;
+}
+
+.footer {
+    grid-area: footer;
+}

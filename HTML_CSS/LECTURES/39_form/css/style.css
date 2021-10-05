@@ -1,0 +1,64 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.page {
+	font-family: 'Righteous', cursive;
+}
+
+form {
+	width: 80vw;
+	margin: auto;
+}
+
+input, select, textarea {
+	display: block;
+	width: 100%;
+	font-size: 20px;
+	color: grey;
+	font-family: 'Righteous', cursive;
+}
+
+input {
+	height: 30px;
+}
+
+label, span {
+	line-height: 2rem;
+	font-size: 25px;
+}
+
+label {
+	display: block;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	display: inline-block;
+	width: 20px;
+	vertical-align: middle;
+}
+
+textarea {
+	height: 200px;
+}
+
+input[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	height: 50px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+@media screen and (min-width: 720px) {
+	form {
+		display: flex;
+		justify-content: space-between;
+	}
+	.column {
+		
+	}
+}

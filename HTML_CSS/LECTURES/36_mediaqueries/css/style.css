@@ -1,0 +1,14 @@
+@import url(reset.css);
+
+div {
+	width: 600px;
+	height: 300px;
+	background-color: navy;
+}
+
+@media all and (max-width: 720px) {
+	div {
+		background-color: red;
+		width: 100%;
+	}
+}

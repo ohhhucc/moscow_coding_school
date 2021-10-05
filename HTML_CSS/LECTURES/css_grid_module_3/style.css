@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.logo__link {
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+.latest-posts {
+    border: 1px solid grey;
+    border-radius: 5%;
+    padding: 10px;
+}
+
+.latest-posts-menu__item {
+    list-style-type: none;
+}
+
+.special-offer__image {
+    max-width: 250px;
+}
+
+.main-menu ul {
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    display: flex;
+}
+
+.main-menu__item {
+    list-style-type: none;
+    margin-right: 1rem;
+}
+
+.main-menu__item a {
+    text-decoration: none;
+}
+
+.team-member__image {
+    border-radius: 50%;
+    max-width: 100%;
+}

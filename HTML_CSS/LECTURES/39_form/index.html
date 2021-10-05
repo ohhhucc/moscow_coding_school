@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Boilerplate</title>
+	<meta charset="utf-8">
+	<meta desctiption="boilerplate code">
+	<meta keywords="boilerplate, test">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="page">
+		<form>
+			<fieldset class="personal">
+				<label for="fio">YOUR NAME</label>
+				<input type="text" name="fio" placeholder="Name Surname">
+				<label for="email">E-MAIL</label>
+				<input type="email" name="email" placeholder="yo@example.com">
+				<label for="password">PASSWORD</label>
+				<input type="password" name="password">
+				<label for="date">DATE</label>
+				<input type="date" name="date" placeholder="MY PLACEHOLDER">
+			</fieldset>
+			<fieldset class="type">
+				<label for="client">HAVE YOU BEEN HERE?</label>
+				<input type="radio" name="client" value="yes"> <span>YES</span>
+				<input type="radio" name="client" value="no"> <span>NO</span>
+				<label for="purpose">WHY ARE YOU HERE?</label>
+				<select name="purpose" id="">
+					<option value="invite">Someone invite me</option>
+					<option value="self">Find myself</option>
+				</select>
+			</fieldset>
+			<fieldset class="message">
+				<label for="message">YOUR MESSAGE</label>
+				<textarea name="message" placeholder="Your message"></textarea>
+				<input type="checkbox" checked="true"> <span>CONFIRMATION OF THE LICENSE AGREEMENT</span>
+			</fieldset>
+			<input type="submit" value="SEND">
+		</form>
+	</div>
+</body>
+</html>
