@@ -1,0 +1,46 @@
+@debug 1px == 1px; // true
+
+@debug 1 == 1px; // false
+
+@debug 1px != 1px; // false
+
+@debug "bold" == bold; // true
+
+@debug (solid, black) == (solid black); // false
+
+@debug (solid, black) == (solid, black); // true
+
+@debug 1 > 2; // false
+
+@debug 1 <= 2; // true
+
+// +
+// -
+// *
+// /
+// %
+
+@debug 1 + 2; // 3
+
+@debug 12px / 4px; // 3px
+
+$width: 100px;
+$gap: 10px;
+
+article {
+    min-width: $width + $gap + "100px";
+    font-family: "Helvetica " + "Neue";
+}
+
+// not
+// not true --> false
+
+// and
+// true and false --> false
+
+// or
+// true or false --> true
+
+
+
+

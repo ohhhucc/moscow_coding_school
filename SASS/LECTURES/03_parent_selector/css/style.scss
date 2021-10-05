@@ -1,0 +1,62 @@
+header {
+
+    h1,
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    span {
+        color: #EEE;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    > {
+        time {
+            color: #555;
+        }
+
+        span {
+            font-size: .5rem;
+        }
+    }
+
+    ~ {
+        h4 {
+            color: #333;
+        }
+    }
+}
+
+.blog_post {
+    &__header {
+        height: 500px;
+        &--collapsed {
+            height: 100px;
+        }
+    }
+}
+
+a {
+    &:link {
+        text-decoration: none;
+    }
+
+    &:hover {
+        color: #f55;
+    }
+
+    &:active {
+        color: #333
+    }
+
+    &:focus {
+        color: #fff
+    }
+
+    &:visited {
+        color: #ff2
+    }
+}

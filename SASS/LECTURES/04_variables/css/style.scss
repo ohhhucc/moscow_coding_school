@@ -1,0 +1,11 @@
+$border_width: 2px; // global variable
+
+article {
+  $article_height: 200px; // local variable
+  border: $border_width solid black;
+  height: $article_height;
+}
+
+section {
+  border: $border_width solid red;
+}

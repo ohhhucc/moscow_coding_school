@@ -1,0 +1,9 @@
+header h1, header h3, header h4, main h1, main h3, main h4 {
+  font-size: 1.5rem;
+}
+header h1 span, header h3 span, header h4 span, main h1 span, main h3 span, main h4 span {
+  color: #fff;
+}
+header h2, main h2 {
+  font-size: 1.3rem;
+}

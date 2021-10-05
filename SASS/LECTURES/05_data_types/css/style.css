@@ -1,0 +1,28 @@
+footer {
+  border: 1px solid #333;
+}
+
+section {
+  min-width: 50%;
+  border: 1px solid black;
+}
+
+body {
+  background-color: rgba(255, 144, 230, 0.6);
+}
+
+article {
+  width: 200.34px;
+}
+
+article {
+  font-family: "Helvetica Neue";
+  background-image: url("/images/background-image.png");
+}
+
+acticle {
+  border: 1px solid black;
+  -ms-flex: 1;
+}
+
+/*# sourceMappingURL=style.css.map */

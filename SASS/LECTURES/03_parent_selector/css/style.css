@@ -1,0 +1,44 @@
+header h1,
+header h2 {
+  font-size: 1.5rem;
+}
+header span {
+  color: #EEE;
+}
+header h3 {
+  font-size: 1.3rem;
+}
+header > time {
+  color: #555;
+}
+header > span {
+  font-size: 0.5rem;
+}
+header ~ h4 {
+  color: #333;
+}
+
+.blog_post__header {
+  height: 500px;
+}
+.blog_post__header--collapsed {
+  height: 100px;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  color: #f55;
+}
+a:active {
+  color: #333;
+}
+a:focus {
+  color: #fff;
+}
+a:visited {
+  color: #ff2;
+}
+
+/*# sourceMappingURL=style.css.map */

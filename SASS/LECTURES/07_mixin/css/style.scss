@@ -1,0 +1,34 @@
+@mixin no_margin() {
+    margin: 0;
+}
+
+article {
+    @include no_margin();
+}
+
+@mixin border($type, $color: black) {
+    border: 1px $type $color;
+}
+
+acticle {
+    @include border(solid);
+}
+
+body {
+    @include border(solid, green);
+}
+
+@mixin link() {
+    &:hover {
+        text-decoration: none;
+        color: red;
+        @content;
+    }
+}
+
+a {
+    font-size: 0.9rem;
+    @include link() {
+        padding: 1px;
+    };
+}

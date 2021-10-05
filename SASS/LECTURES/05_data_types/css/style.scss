@@ -1,0 +1,67 @@
+@use 'sass:list';
+@use 'sass:map';
+
+// Null
+
+$no_value: null; // falsey value
+
+// Boolean
+
+$var1: true;
+$var2: false;
+
+// Maps
+
+$footer_border: ('width': 1px, 'type': solid, 'color': #333 );
+
+footer {
+  border: map.get($footer_border, 'width') map.get($footer_border, 'type') map.get($footer_border, 'color');
+}
+
+// Lists
+
+$values: 12px, 50%, 3rem, 30px;
+$section_border: 1px solid black;
+
+section {
+  min-width: list.nth($values, 2);
+  border: $section_border;
+}
+
+// Colors
+
+//$background_color: #dedede;
+
+$background_color: rgba(255, 144, 230, 0.6);
+
+body {
+  background-color: $background_color;
+}
+
+// Numbers
+
+$width: 200.34px;
+
+article {
+  width: $width;
+}
+
+// Quoted strings
+
+$font_family: 'Helvetica Neue';
+$file_name: 'background-image.png';
+
+article {
+  font-family: $font_family;
+  background-image: url("/images/#{$file_name}");
+}
+
+// Unquoted strings
+
+$type: solid;
+$prefix: -ms;
+
+acticle {
+  border: 1px $type black;
+  #{$prefix}-flex: 1;
+}

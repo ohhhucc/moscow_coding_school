@@ -1,0 +1,32 @@
+header {
+
+  h1,
+  h2 {
+    font-size: 1.5rem;
+
+     span {
+      color: #fff;
+    }
+  }
+
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  > {
+    time {
+      color: #555;
+    }
+
+    span {
+      font-size: .5rem;
+    }
+  }
+
+  ~ {
+    h4 {
+      color: #333;
+    }
+  }
+}
