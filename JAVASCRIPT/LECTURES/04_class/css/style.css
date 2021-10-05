@@ -1,0 +1,30 @@
+@import url(reset.css);
+
+@keyframes fall {
+	from {
+		bottom: 400px;
+	}
+	to {
+		bottom: 0px;
+	}
+}
+
+.page {
+	height: 100vh;
+	position: relative;
+}
+
+.ball {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: absolute;
+	left: 50%;
+	margin-left: -50px;
+	bottom: 400px;
+	border-radius: 50%;
+}
+
+.animated {
+	animation: fall 1s linear infinite alternate;
+}
