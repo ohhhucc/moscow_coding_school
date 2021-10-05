@@ -1,0 +1,29 @@
+@import url(reset.css);
+
+html {
+	font-size: 20px;
+}
+
+body {
+	background-color: #333;
+}
+
+h1, p {
+	color: white;
+}
+
+.outer {
+	font-size: 50px;
+}
+
+.outer h1 {
+	font-size: 2em;
+}
+
+.outer_2 {
+	font-size: 20px;
+}
+
+.outer_2 p {
+	font-size: 2rem;
+}

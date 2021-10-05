@@ -1,0 +1,45 @@
+@import url(reset.css);
+
+.columns_1 {
+	min-height: 500px;
+	background-color: #333;
+	display: flex;
+}
+
+.column.two {
+	height: 720px;
+	width: 240px;
+	background-color: violet;
+}
+
+.column.one {
+	height: 1020px;
+	width: calc(100% - 240px);
+	background-color: orange;
+}
+
+.columns_2 {
+	min-height: 500px;
+	background-color: #333;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.columns_2 .column {
+	width: calc((100% -  80px)/3);
+	height: 100px;
+	background-color: red;
+}
+
+.columns_2 .column.one {
+
+}
+
+.columns_2 .column.two {
+
+}
+
+.columns_2 .column_three {
+
+}

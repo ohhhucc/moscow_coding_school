@@ -1,0 +1,32 @@
+@import url(reset.css);
+
+.flex-container {
+	height: 500px;
+	background-color: blue;
+	display: flex;
+
+	flex-direction: row-reverse;
+	/*flex-wrap: wrap;*/
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
+}
+
+.flex-item {
+	height: 100px;
+	width: 300px;
+	background-color: orange;
+	border: 1px solid black;
+}
+
+.flex-item.one {
+	order: 1;
+	flex-grow: 0;
+	flex-shrink: 2;
+	align-self: flex-end;
+}
+
+.flex-item.three {
+	order: 2;
+	flex-basis: 500px;
+}
